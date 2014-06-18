@@ -17,8 +17,10 @@ For now, here are the improvements you can play around with. Keep in mind, I hav
 * Only mouse coordinates are grabbed in the mousemove event function for speed
 * All other calculation, and most importantly, animation, is handled in a requestAnimationFrame, with fallback to setTimeout
 * Basic support for touch. Currently, it's best to include Modernizr for a complete touch support test. A tap shows the loupe. Clicking on the loupe closes it, clicking elsewhere on the image moves it. Drag support doesn't seem to have the kind of fluid experience I would hope for, so this seems to be the best solution. I'm open to improvements, but dragging does "sort of" work.
-* Remy Sharp's debounce function is included, but if you include Ben Alman's jquery-throttle-debounce plugin, his function will be used instead. Resize and scroll events are debounced.
-* Everything except the resize callback is only binded while the loupe is active. The scroll event is new, and prevents scrolling from messing with the loupe and causing issues. If your curious try turning it off.
+* A debounce function is included, but if you include the query-throttle-debounce plugin, that function will be used instead. Resize and scroll events are debounced for performance.
+* Everything except the resize callback is only bound while the loupe is active for further performance gains. The scroll event is new, and prevents scrolling from messing with the loupe and causing issues. If you're curious try turning it off.
 * I tried to comment as much as possible, I hope it's helpful
 
-There might be some more I could include, I will clean this up when I get the chance.
+As stated before, this is not production ready. Touch support is very basic, I haven't tested multiple loops on a page (the other changes should improve performance in that respect).
+
+Also, I may have inadvertently broken certain configurations. I've been using the loupe on a browser resized image, so I've yet to test it on an actual thumbnail for instance.
