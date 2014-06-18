@@ -2,7 +2,7 @@ loupe is a lightweight onhover image magnifier for jQuery.
 
 see here for demos & instructions: http://jdbartlett.github.com/loupe
 
-#### Added by Steven Migliorato 06-16-14
+#### Added by stoolio 06-16-14
 
 I spent a good two nights hacking away at this library for use in another project.
 
