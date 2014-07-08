@@ -2,13 +2,15 @@ loupe is a lightweight onhover image magnifier for jQuery.
 
 see here for demos & instructions: http://jdbartlett.github.com/loupe
 
+improved version demo is here: http://stoolio.github.com/loupe
+
+I attempted to contact the author of the original, but I've heard nothing back. I may end up renaming this and working on separately.
+
 #### Added by stoolio 06-16-14
 
 I spent a good two nights hacking away at this library for use in another project.
 
-Needless to say, I did not follow git best practices.
-
-I think there are a few more improvements I can make, particularly to the code organization. I am going to "rewrite" it, **jquery.loupe.improved.js**, with more atomic commits.
+I think there are a few more improvements I can make, particularly to the code organization. I would also like to get some jquery plugin best practices integrated for configurability etc.
 
 For now, here are the improvements you can play around with. Keep in mind, I haven't done a full battery of testing on this thing, so consider this a beta at best.
 
@@ -23,4 +25,6 @@ For now, here are the improvements you can play around with. Keep in mind, I hav
 
 As stated before, this is not production ready. Touch support is very basic, I haven't tested multiple loops on a page (the other changes should improve performance in that respect).
 
-Also, I may have inadvertently broken certain configurations. I've been using the loupe on a browser resized image, so I've yet to test it on an actual thumbnail for instance.
+** EDIT **
+
+The demo page available at http://stoolio.github.com/loupe features the new library. You can compare to the original at http://jdbartlett.github.com/loupe
